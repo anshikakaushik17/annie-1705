@@ -1,5 +1,4 @@
 name: Python Script Workflow
-#hiiii
 
 on:
   push:
