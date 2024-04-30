@@ -1,25 +1,23 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Python Script Workflow
 
 on:
   push:
-    branches: 
-       -main
+    branches:
+      - main
 
 jobs:
   run_python_script:
-  
-      name: Run hello.py
-      runs-on: ubuntu-latest
-     
-      steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        
-      - name: Set up Python
-        uses: actions/setup-python@v2
+    name: Run hello.py
+    runs-on: ubuntu-latest
 
-        with:
-         Python-version: '3.12' #Use the version you need 
-      - name: Run testing.py
-        run: python testing.py
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12' # Use the Python version you need
+
+    - name: Run testing.py
+      run: python testing.py
