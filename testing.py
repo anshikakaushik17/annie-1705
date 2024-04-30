@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 # Define two matrices as lists of lists
@@ -30,4 +29,3 @@ print("\nMatrix Subtraction:")
 print(result_subtraction)
 print("\nMatrix Multiplication:")
 print(result_multiplication)
-
